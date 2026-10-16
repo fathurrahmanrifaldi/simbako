@@ -1,0 +1,14 @@
+.git
+.github
+.agents
+node_modules
+vendor
+public/build
+public/hot
+storage/*.key
+.env
+.env.*
+.phpunit.result.cache
+tests
+phpunit.xml
+*.md

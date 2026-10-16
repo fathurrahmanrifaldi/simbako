@@ -1,0 +1,18 @@
+{
+	frankenphp
+	order php_server before file_server
+	admin off
+}
+
+:{$PORT:80} {
+	root * /app/public
+	encode zstd br gzip
+	php_server
+
+	# Security Headers
+	header {
+		X-Content-Type-Options "nosniff"
+		X-Frame-Options "SAMEORIGIN"
+		Referrer-Policy "strict-origin-when-cross-origin"
+	}
+}

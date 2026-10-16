@@ -32,9 +32,9 @@ RUN composer install \
     --no-scripts
 
 # ==============================================================================
-# Stage 3: Production Runtime (FrankenPHP + PHP 8.3 Alpine)
+# Stage 3: Production Runtime (FrankenPHP + PHP 8.4 Alpine)
 # ==============================================================================
-FROM dunglas/frankenphp:1-php8.3-alpine
+FROM dunglas/frankenphp:1-php8.4-alpine
 
 WORKDIR /app
 

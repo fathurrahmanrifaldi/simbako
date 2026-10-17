@@ -15,9 +15,9 @@ class DatabaseSeeder extends Seeder
     {
         // 1. Create Default Users (AUTH-01)
         $owner = User::firstOrCreate(
-            ['email' => 'raswan@simbako.test'],
+            ['email' => 'user@simbako.test'],
             [
-                'name' => 'Pak Raswan (Pemilik)',
+                'name' => 'user@simbako.test (Pemilik)',
                 'role' => 'owner',
                 'password_hash' => Hash::make('password123'),
                 'is_active' => true,

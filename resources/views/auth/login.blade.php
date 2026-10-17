@@ -44,7 +44,7 @@
 
             <div>
                 <label for="email" class="block text-xs font-bold text-slate-700 mb-1.5">Email Pemilik</label>
-                <input type="email" id="email" name="email" value="{{ old('email', 'raswan@simbako.test') }}" required
+                <input type="email" id="email" name="email" value="{{ old('email', 'user@simbako.test') }}" required
                     class="w-full touch-target px-4 text-sm bg-slate-50 border border-slate-300 rounded-xl focus:bg-white focus:outline-none focus:ring-2 focus:ring-emerald-500 font-medium"
                     placeholder="nama@email.com">
                 @error('email') <p class="text-rose-500 text-xs mt-1">{{ $message }}</p> @enderror
@@ -96,7 +96,7 @@
         </form>
 
         <div class="mt-6 pt-4 border-t border-slate-100 text-center">
-            <span class="text-[11px] text-slate-400 font-medium">Demo: Pemilik <code>password123</code> | Pegawai PIN <code>123456</code></span>
+            <span class="text-[11px] text-slate-400 font-medium">Demo: user@simbako.test <code>password123</code> | Pegawai PIN <code>123456</code></span>
         </div>
     </div>
 
